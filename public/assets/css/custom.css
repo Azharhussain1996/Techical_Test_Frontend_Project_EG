@@ -1,0 +1,83 @@
+.react-tel-input .form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25) !important;
+}
+
+.animated-tick {
+  display: inline-block;
+  animation: tickAnimation 0.5s ease-in-out forwards;
+}
+
+@keyframes tickAnimation {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.tick-icon {
+  color: green;
+  font-size: 23px; /* Increase the font size here */
+  margin-left: 10px;
+  display: inline-block;
+}
+
+/* body {
+  background: url("./imgages/bg-img-1.jpg") top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+} */
+
+.countdown-display {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  justify-content: center;
+  padding: 0.5rem;
+  max-width: 150px;
+  margin: 0 auto; */
+  max-width: 150px;
+}
+
+.countdown-value {
+  /* background-color: #2f5d6f; */
+  border-radius: 50%;
+  /* color: #03d5c0; */
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-weight: 700;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.countdown-value:hover {
+  transform: scale(1.05);
+}
+.countdown-value > span {
+  color: #fff;
+  font-size: clamp(0.75rem, 2vw, 0.875rem);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 0.2rem;
+  font-weight: 200;
+}
